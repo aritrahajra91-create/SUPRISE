@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Dearest Moupriya ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#ff4b7d);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+overflow-x:hidden;
+color:white;
+text-align:center;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+padding:50px 20px;
+}
+
+img{
+width:320px;
+max-width:100%;
+border-radius:25px;
+box-shadow:0 0 35px rgba(255,255,255,.4);
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+}
+
+h1{
+margin-top:30px;
+font-size:45px;
+color:#ffd1dc;
+text-shadow:0 0 15px pink;
+}
+
+.message{
+margin-top:40px;
+padding:30px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border-radius:20px;
+line-height:2;
+font-size:20px;
+text-align:left;
+}
+
+.signature{
+margin-top:35px;
+font-size:28px;
+text-align:center;
+color:#ffb6c1;
+font-weight:bold;
+}
+
+audio{
+margin-top:25px;
+width:100%;
+max-width:400px;
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+color:#ff6b9e;
+animation:rise linear forwards;
+pointer-events:none;
+}
+
+@keyframes rise{
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:1;
+}
+100%{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="photo.png" alt="Our Love">
+
+<h1>For My Dearest Moupriya ❤️</h1>
+
+<audio autoplay loop controls>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="message">
+
+<p>
+
+<b>My love,</b>
+
+<br><br>
+
+If I had one wish in this world, it would always be you.
+
+<br><br>
+
+Distance may keep us apart, but it has never stopped my heart from loving you. Every morning I wake up grateful that you exist, and every night I sleep dreaming of the day I can finally hold your hand.
+
+<br><br>
+
+You are the reason my ordinary days feel special, my smile comes so easily, and my heart feels complete. No matter how difficult life becomes, I promise to stand by you, respect you, care for you, and love you with all my heart.
+
+<br><br>
+
+I don't need a perfect life—I just need you in it.
+
+<br><br>
+
+One day, this distance will end. One day, I won't have to send you my hugs through words or my kisses through a screen. I'll be right there beside you, making every promise come true.
+
+<br><br>
+
+Until that day, remember this:
+
+<br><br>
+
+<b>You are my today, my tomorrow, and every dream I have for the future.</b>
+
+<br><br>
+
+<b>I love you more than yesterday and less than tomorrow.</b>
+
+</p>
+
+<div class="signature">
+
+Forever yours,<br>
+ARITRA ❤️
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function heart(){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(15+Math.random()*25)+"px";
+
+h.style.animationDuration=(4+Math.random()*5)+"s";
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+h.remove();
+},9000);
+
+}
+
+setInterval(heart,250);
+
+</script>
+
+</body>
+</html>
